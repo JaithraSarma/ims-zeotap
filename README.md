@@ -1,10 +1,10 @@
-# 🚨 Incident Management System (IMS)
+# Incident Management System (IMS)
 
 A resilient, mission-critical Incident Management System designed to monitor a complex distributed stack (APIs, MCP Hosts, Distributed Caches, Async Queues, RDBMS, and NoSQL stores) and manage failure mediation workflows.
 
 ---
 
-## 📐 Architecture Diagram
+## Architecture Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -54,7 +54,7 @@ A resilient, mission-critical Incident Management System designed to monitor a c
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
@@ -68,7 +68,7 @@ A resilient, mission-critical Incident Management System designed to monitor a c
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker & Docker Compose installed
@@ -124,7 +124,7 @@ node scripts/mock-signals.js burst         # Sends 10,000 signals for load testi
 
 ---
 
-## 🎯 Design Patterns
+## Design Patterns
 
 ### Strategy Pattern — Alert Severity Classification
 
@@ -154,7 +154,7 @@ OPEN ──▶ INVESTIGATING ──▶ RESOLVED ──▶ CLOSED
 
 ---
 
-## 🛡️ Backpressure Handling
+## Backpressure Handling
 
 The system handles bursts of up to 10,000 signals/sec through a three-layer defense:
 
@@ -183,7 +183,7 @@ HTTP Request → [Rate Limit] → [Ring Buffer] → [Drain Loop] → [Debounce] 
 
 ---
 
-## 📊 Data Separation Strategy
+## Data Separation Strategy
 
 | Data Type | Store | Why |
 |-----------|-------|-----|
@@ -194,7 +194,7 @@ HTTP Request → [Rate Limit] → [Ring Buffer] → [Drain Loop] → [Debounce] 
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### Signal Ingestion
 | Method | Endpoint | Description |
@@ -229,7 +229,7 @@ HTTP Request → [Rate Limit] → [Ring Buffer] → [Drain Loop] → [Debounce] 
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests (33 tests, 4 suites)
 
@@ -276,7 +276,7 @@ HTTP Request → [Rate Limit] → [Ring Buffer] → [Drain Loop] → [Debounce] 
 
 ---
 
-## 🎨 Creative Additions
+## Creative Additions
 
 1. **In-UI Signal Simulator** — Trigger predefined failure scenarios (RDBMS outage, Cache storm, API errors, MCP failure) directly from the dashboard without needing CLI access
 2. **Visual Status Timeline** — Interactive progress bar showing the incident lifecycle with animated current state
@@ -286,7 +286,7 @@ HTTP Request → [Rate Limit] → [Ring Buffer] → [Drain Loop] → [Debounce] 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Zeotap/
@@ -357,7 +357,7 @@ Zeotap/
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
